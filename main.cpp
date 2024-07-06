@@ -2,11 +2,11 @@
 
 int main()
 {
-    DigitalIn B1_USER(BUTTON1);
+    DigitalIn B1(BUTTON1);
 
-    DigitalOut LD2(LED2);
+    DigitalOut Teyu(LED1);
 
     while (true) {
-        LD2 = B1_USER;
+        Teyu = !B1;
     }
 }
