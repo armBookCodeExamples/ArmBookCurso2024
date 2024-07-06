@@ -6,7 +6,7 @@ Correo: nicotertu@gmail.com
 
 El objetivo de este programa consiste en regar automaticamente plantas empleando sensores de humedad. El programa obedece, a grandes rasgos, el siguiente diagrama de bloques:
 
-![BloqDiag](./diagrama de bloques.png)
+![bloqdiag](https://github.com/Nicotertu/ArmBookCurso2024/assets/39504627/20b203e4-0505-4b1e-b71c-89ac4d5aaa40)
 
 El sistema cuenta con dos sensores: uno de humedad y uno de luz.
 
