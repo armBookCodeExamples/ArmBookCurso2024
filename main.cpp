@@ -4,7 +4,7 @@
 
 int main()
 {
-    DHT dht(D8, DHT::DHT11);
+    DHT dht(D1, DHT::DHT11);
     DigitalIn B1(BUTTON1);
 
     DigitalOut Teyu(LED1);
