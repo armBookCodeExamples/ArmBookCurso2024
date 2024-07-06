@@ -20,3 +20,16 @@ El sistema cuenta tambien con dos luces LED indicadoras:
   - Una luz se enciende y apaga cada segundo indicando que el sistema está operativo y en modo automatico.
   - Una luz se enciende cuando el reservorio tiene poca agua.
 
+El funcionamiento del programa es el siguiente:
+
+ 1. Se inician dos callbacks: uno para indicar que el programa esta funcionando y otro para mandar a medir el sensor de humedad.
+ 2. El primer callback solo enciende y apaga un led cada segundo.
+ 3. El segundo callback manda a leer el sensor de humedad cada 60 segundos.
+    - Los 60 segundos son para dar tiempo a la tierra de esparcirse.
+ 5. Si el programa esta en modo automatico, el sensor de humedad es leido.
+ 6. Si el sensor de humedad detecta que la planta está seca, manda a activar la bomba de agua.
+ 7. La bomba de agua se enciende por 5 segundos.
+ 8. Luego de todo eso inicia el loop que va a estar activandose cada segundo.
+ 9. Se comienza leyendo el boton para ver si el usuario desea encender la bomba manualmente.
+ 10. Y por ultimo se revisa el nivel de agua en el reservorio por medio del sensor de luz.
+
