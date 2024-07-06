@@ -1,4 +1,4 @@
-#include "DHT11.h"
+#include "Dht11.h"
 
 Dht11::Dht11(PinName const &p) : _pin(p) {
     // Set creation time so we can make 
