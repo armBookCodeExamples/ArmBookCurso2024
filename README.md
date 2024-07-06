@@ -1,9 +1,12 @@
 # Regador de plantas automático
 
-Nombre: Nicolás Tertusio
+Nombre: Nicolás Tertusio.
+
 Correo: nicotertu@gmail.com
 
-El objetivo de este programa consiste en regar automaticamente plantas empleando sensores de humedad.
+El objetivo de este programa consiste en regar automaticamente plantas empleando sensores de humedad. El programa obedece, a grandes rasgos, el siguiente diagrama de bloques:
+
+![BloqDiag]('./diagrama de bloques.png')
 
 El sistema cuenta con dos sensores: uno de humedad y uno de luz.
 
