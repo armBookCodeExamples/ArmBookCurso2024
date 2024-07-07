@@ -4,24 +4,24 @@
 
 int main()
 {
-    DHT dht(D1, DHT::DHT11);
     DigitalIn B1(BUTTON1);
-
+    DHT sensor(D1, DHT::DHT11);
     DigitalOut Teyu(LED1);
+    UnbufferedSerial pc(USBTX, USBRX, 9600);
+    char buffer[10];
 
     while (true)
     {
         Teyu = !B1;
         delay(3);
-        int err = dht.read();
-        if (err == DHT::SUCCESS)
+        int err = sensor.read();
+        if(err == DHT::SUCCESS)
         {
-            printf("T = %.1f°C\r\n", dht.getTemperature());
+            sprintf(buffer, "T: %.2f\r\n", sensor.getTemperature(DHT::CELCIUS));
         } 
-        else
+        else 
         {
-            printf("Error code : %d\r\n", err);
+            pc.write(buffer, 10);
         }
-        delay(3);
     }
 }
