@@ -36,3 +36,6 @@ La bomba P2 impulsa agua a presión a través de membranas para purificarla, y e
 - **DIGITAL IN:** Emula el interruptor de nivel medio ("level medium").
 - **DIGITAL IN:** Emula el interruptor de nivel bajo ("level low").
 
+
+
+
