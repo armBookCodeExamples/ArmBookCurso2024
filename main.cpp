@@ -1,12 +1,13 @@
-#include "mbed.h"
+//=====[Libraries]=============================================================
+
+#include "control_system.h"
+
+//=====[Main function, the program entry point after power on or reset]========
 
 int main()
 {
-    DigitalIn B1_USER(BUTTON1);
-
-    DigitalOut LD1(LED1);
-
+    controlSystemInit();
     while (true) {
-        LD1 = B1_USER;
+        controlSystemUpdate();
     }
 }
